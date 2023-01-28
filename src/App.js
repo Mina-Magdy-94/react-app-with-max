@@ -40,12 +40,9 @@ function App() {
   }
 
   const filteringYearshandler = (filteringYear) => {
-    console.log({ filteringYear });
-    console.log({ expenses });
     filteringYear === 'all' ? setExpenses(DUMMY_EXPENSES) :
       setExpenses(DUMMY_EXPENSES.filter((el) => el.date.getFullYear() === Number(filteringYear)))
   }
-  console.log({ expenses });
 
 
   return (

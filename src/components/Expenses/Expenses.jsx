@@ -3,6 +3,7 @@ import Card from '../UI/Card'
 import './Expenses.css'
 import ExpensesFliter from './ExpensesFliter'
 import ExpensesList from './ExpensesList'
+import ExpensesChart from './ExpensesChart'
 
 const Expenses = ({expenses,onFilteringYears}) => {
     const [filteredyear,setFilteredYear]=useState('all')
@@ -17,6 +18,7 @@ const Expenses = ({expenses,onFilteringYears}) => {
     return (
         <Card className='expenses'>
             <ExpensesFliter selected={filteredyear} onChangeFilter={filterChangeHandler}/>
+            <ExpensesChart expenses={expenses}/>
             <ExpensesList expenses={expenses}/>
         </Card>
     )
