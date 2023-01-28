@@ -1,0 +1,20 @@
+.expense-filter__child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-filter__child label{
+    color: white;
+    font-weight:bold ;
+    width: 50%;
+}
+
+.expense-filter__child select{
+    width: 14%;
+    font-weight: bold;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
